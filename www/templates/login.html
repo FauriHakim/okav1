@@ -1,0 +1,72 @@
+<ion-modal-view>
+  <ion-header-bar bar-stable>
+    <!--<h1 class="title">Sign Up</h1>-->
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content style="background: url(img/pic01.jpg) center; background-size: cover;" > 
+
+    <form ng-submit="doLogin()">
+        <div class="hero no-header flat">
+            <div class="content">
+                <div class="app-icon"></div>
+                <h1 a class="light">iCariin</h1>
+            </div>
+        </div>
+      <div class="list list-inset">
+            <label class="item item-input">
+                <input type="text" placeholder="Full Name">
+            </label>
+      </div>
+      <div class="list list-inset">
+            <label class="item item-input">
+                <input type="text" placeholder="Email">
+            </label>
+      </div>
+      <div class="list list-inset">
+            <label class="item item-input">
+              <input type="password" placeholder="Password" ng-model="data.password">
+          </label>
+      </div>
+            <label class="item" style="border:0px;">
+          <button class="button button-block button-positive" type="submit">Sign Up</button>
+        </label>
+      </div>
+    </form>
+
+  </ion-content>
+   <!--<div class="bar bar-footer bar-positive">
+      <div class="title">Footer</div>
+    </div>-->
+</ion-modal-view>
+
+
+
+
+
+<!--<ion-content style="background: url(img/BG.jpg) center; background-size: cover;">
+        <div class="hero no-header flat">
+            <div class="content">
+                <div class="app-icon"></div>
+                <h1>AppName</h1>
+            </div>
+        </div>
+         <div class="list list-inset">
+          <label class="item item-input">
+              <input type="text" placeholder="Username" ng-model="data.username">
+          </label>
+          </div>
+           <div class="list list-inset">
+          <label class="item item-input">
+              <input type="password" placeholder="Password" ng-model="data.password">
+          </label>
+      </div>
+      <button ui-sref="app.action" class="button button-block button-assertive" >Login</button>
+        <div class="button-bar social-login">
+            <button class="button button-small button-border icon-left ion-social-google button-assertive-900">Google+</button>
+            
+            <button class="button button-small button-border icon-left ion-social-facebook button-positive-900">Facebook</button>
+        </div>
+    </ion-content>
+-->
